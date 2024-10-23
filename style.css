@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* header Section */
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -40,7 +41,6 @@ body {
   background-color: #e6533c;
   border-radius: 50px;
 }
-
 /* banner Section */
 .banner {
   display: grid;
@@ -59,8 +59,10 @@ body {
 }
 .free-videos-badge p,
 .premium-videos-badge p,
-.banner-content p {
+.banner-content p,
+.habits p {
   color: #ffffff80;
+  font-size: 14px;
 }
 .buttons {
   margin-top: 20px;
@@ -131,4 +133,29 @@ body {
 .premium-videos-badge-text {
   display: flex;
   flex-direction: column;
+}
+/* Habits Section */
+.habits {
+  text-align: center;
+  padding: 50px 20px;
+}
+.habits h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+
+.habits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  text-align: center;
+}
+.card img {
+  border: 5px solid rgba(255, 255, 255, 0.021);
+  border-radius: 50%;
 }
