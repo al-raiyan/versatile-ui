@@ -4,7 +4,7 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: #121212;
+  background-color: black !important;
   color: #fff;
   margin: 100px;
 }
@@ -47,7 +47,6 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 50px;
-  background-color: #121212;
 }
 .banner-content h1 {
   font-size: 78px;
@@ -60,7 +59,8 @@ body {
 .free-videos-badge p,
 .premium-videos-badge p,
 .banner-content p,
-.habits p {
+.habits p,
+.run-mile p {
   color: #ffffff80;
   font-size: 14px;
 }
@@ -139,6 +139,7 @@ body {
   text-align: center;
   padding: 50px 20px;
 }
+.run-mile h1,
 .habits h1 {
   font-size: 48px;
   font-weight: 900;
@@ -158,4 +159,20 @@ body {
 .card img {
   border: 5px solid rgba(255, 255, 255, 0.021);
   border-radius: 50%;
+}
+/* Run an Extra Mile Section */
+.run-mile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+  align-items: center;
+  padding: 50px;
+  background-color: #121212;
+  border-radius: 20px;
+}
+
+.run-mile img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
 }
