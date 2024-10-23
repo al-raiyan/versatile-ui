@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #121212;
+  color: #fff;
+  margin: 100px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 800;
+  font-style: italic;
+  color: #ff4500;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.192);
+  border-radius: 50px;
+}
+.menu a {
+  color: #fff;
+  margin-right: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.home {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #e6533c;
+  border-radius: 50px;
+}
+
+/* banner Section */
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px;
+  background-color: #121212;
+}
+.banner-content h1 {
+  font-size: 78px;
+  font-weight: 900;
+}
+.banner-content h1 span {
+  font-weight: normal;
+  font-style: italic;
+}
+.free-videos-badge p,
+.premium-videos-badge p,
+.banner-content p {
+  color: #ffffff80;
+}
+.buttons {
+  margin-top: 20px;
+}
+.join-btn {
+  background-color: #e6533c;
+  padding: 16px 40px;
+  border: 1px solid #e6533c;
+  border-radius: 50px;
+  color: #fff;
+  margin-right: 10px;
+}
+.download-btn {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 16px 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.banner-image {
+  position: relative;
+  place-items: center;
+}
+
+.banner-image img {
+  width: 100%;
+  max-width: 400px;
+}
+.free-videos-badge {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  top: 140px;
+  right: 120px;
+}
+.premium-videos-badge span,
+.free-videos-badge span {
+  font-size: 40px;
+  font-weight: 900;
+}
+.premium-videos-badge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  bottom: 70px;
+  right: 450px;
+}
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: #e6533c;
+  border-radius: 50%;
+}
+.premium-videos-badge-text {
+  display: flex;
+  flex-direction: column;
+}
