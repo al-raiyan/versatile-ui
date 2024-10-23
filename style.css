@@ -18,7 +18,7 @@ body {
   font-size: 36px;
   font-weight: 800;
   font-style: italic;
-  color: #ff4500;
+  color: #e6533c;
 }
 .menu {
   display: flex;
@@ -32,6 +32,9 @@ body {
   margin-right: 18px;
   font-weight: 400;
   text-decoration: none;
+}
+.hamburger {
+  display: none;
 }
 .home {
   padding-top: 10px;
@@ -47,6 +50,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 50px;
+  margin-bottom: 20px;
 }
 .banner-content h1 {
   font-size: 78px;
@@ -60,9 +64,12 @@ body {
 .premium-videos-badge p,
 .banner-content p,
 .habits p,
-.run-mile p {
+.run-mile p,
+.bmi-calculator p,
+.team p,
+.footer p,
+.footer-links h2 {
   color: #ffffff80;
-  font-size: 14px;
 }
 .buttons {
   margin-top: 20px;
@@ -74,6 +81,7 @@ body {
   border-radius: 50px;
   color: #fff;
   margin-right: 10px;
+  cursor: pointer;
 }
 .download-btn {
   background-color: rgba(255, 255, 255, 0);
@@ -82,6 +90,7 @@ body {
   border-radius: 50px;
   color: #fff;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .banner-image {
@@ -138,9 +147,12 @@ body {
 .habits {
   text-align: center;
   padding: 50px 20px;
+  margin-bottom: 20px;
 }
 .run-mile h1,
-.habits h1 {
+.habits h1,
+.bmi-calculator h1,
+.team h1 {
   font-size: 48px;
   font-weight: 900;
   color: white;
@@ -169,10 +181,184 @@ body {
   padding: 50px;
   background-color: #121212;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .run-mile img {
   width: 100%;
   max-width: 500px;
   border-radius: 20px;
+}
+/* BMI Calculator Section */
+.bmi-calculator {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bmi-calculator h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+.bmi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 20px;
+}
+.bmi-chart table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid rgba(255, 255, 255, 0.151);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.bmi-chart td {
+  color: #ffffff80;
+}
+.bmi-form {
+  width: 80%;
+}
+.bmi-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #444;
+  color: #aaa;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #e6533c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Team Section */
+.team {
+  text-align: center;
+  padding: 50px;
+  background-color: #1f1f1f;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.team-member img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.trainer-roll {
+  text-align: start;
+  margin-left: 10px;
+  position: relative;
+  bottom: 100px;
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  font-size: 70px;
+  font-weight: 800;
+  color: #e6533c;
+  justify-items: center;
+  align-items: center;
+  font-style: italic;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.line {
+  border-top: 2px solid #ffffff80;
+  width: 100%;
+}
+footer h3 {
+  color: #ffffff80;
+  text-align: center;
+}
+footer {
+  background-color: #121212;
+  padding: 20px;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hamburger img {
+    width: 30px;
+    height: 30px;
+  }
+  .banner {
+    grid-template-columns: 1fr;
+    text-align: start;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner-image {
+    margin-top: 20px;
+  }
+
+  .habits-grid,
+  .training-grid,
+  .bmi-grid,
+  .team-grid,
+  .run-mile,
+  .bmi-form,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-content h1 {
+    font-size: 36px;
+  }
+
+  .run-mile img {
+    max-width: 100%;
+  }
 }
